@@ -22,6 +22,10 @@ We will update the paper on arxiv from time to time. Keep updated here: https://
   5. We break the embeddings for weather-large into several parts due to the 2GB file size limit of GITHUB. You need to merge them with `cat openai_caption_emb_large_part_*.tar > openai_caption_emb_large.tar` and then untar it.
 - We also upload all the scripts to generate such a dataset, including rawdata, captioning, pre-embedding, and indexing as a seperate repository. You can find it here: [Weather Captioned Dataset](https://github.com/VEWOXIC/Weather-Captioned)
 
+⚠ If you have trouble in downloading the pre-embedding files with git-lfs, we also provide google drive links for the pre-embedding files. [Click Here](https://drive.google.com/drive/folders/1feNhuijyls5DtxkeDjoKM0lISEF-UaPf?usp=sharing)
+
+You can use `gdown` to download the files from google drive. 
+
 ## Run the Model
 
 Run scripts in the ./scripts folder. 
