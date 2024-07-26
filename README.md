@@ -1,16 +1,8 @@
 # TGTSF: Text Guided Time Series Forecasting
 
-We only provide the toy dataset for the demo. We are working on uploading the rest of datasets. Especially the weather-large. 
-
-We will update the link here: TODO
-
-You may need to do the pre-embedding using scripts provided in the dataset folder. 
-
 The main model is TGTSF_torch. Other versions are deprecated. 
 
 We will update the paper on arxiv from time to time. Keep updated here: https://arxiv.org/abs/2405.13522
-
-Updating the Dataset!~~~~
 
 
 ## Dataset Preparation
@@ -29,4 +21,12 @@ Updating the Dataset!~~~~
   4. Unzip the tarball with `tar -xvf embeddings.tar`
   5. We break the embeddings for weather-large into several parts due to the 2GB file size limit of GITHUB. You need to merge them with `cat openai_caption_emb_large_part_*.tar > openai_caption_emb_large.tar` and then untar it.
 - We also upload all the scripts to generate such a dataset, including rawdata, captioning, pre-embedding, and indexing as a seperate repository. You can find it here: [Weather Captioned Dataset](https://github.com/VEWOXIC/Weather-Captioned)
+
+## Run the Model
+
+Run scripts in the ./scripts folder. 
+
+Use visualize.ipynb to visualize the results. We may upload the checkpoint we trained later. 
+
+
 
