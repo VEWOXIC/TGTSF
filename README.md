@@ -27,6 +27,6 @@ Updating the Dataset!~~~~
   2. Run `git lfs install` in the repository
   3. Run `git lfs pull` to download the pre-embedding files.
   4. Unzip the tarball with `tar -xvf embeddings.tar`
-  5. We break the embeddings for weather-large into several parts due to the 2GB file size limit of GITHUB. You need to merge them with `cat openai_caption_emb_large_part_* > openai_caption_emb_large.tar` and then untar it.
+  5. We break the embeddings for weather-large into several parts due to the 2GB file size limit of GITHUB. You need to merge them with `cat openai_caption_emb_large_part_*.tar > openai_caption_emb_large.tar` and then untar it.
 - We also upload all the scripts to generate such a dataset, including rawdata, captioning, pre-embedding, and indexing as a seperate repository. You can find it here: [Weather Captioned Dataset](https://github.com/VEWOXIC/Weather-Captioned)
 
