@@ -1,6 +1,6 @@
 from data_provider.data_factory import TGTSF_data_provider, TGTSF_pretrain_data_provider
 from exp.exp_basic import Exp_Basic
-from models import Informer, Autoformer, Transformer, DLinear, Linear, NLinear, PatchTST, TGTSF_PatchTST, TTSF, TGTSF, simple_PatchTST, TGTSF_torch, TGTSF_torch_v1, TGTSF_dct
+from models import Informer, Autoformer, Transformer, DLinear, Linear, NLinear, PatchTST, TGTSF_torch
 from utils.tools import EarlyStopping, adjust_learning_rate, visual, test_params_flop
 from utils.metrics import metric
 from utils.augmentations import augmentation
@@ -36,13 +36,7 @@ class Exp_Main(Exp_Basic):
             'NLinear': NLinear,
             'Linear': Linear,
             'PatchTST': PatchTST,
-            'TGTSF': TGTSF,
-            'TGTSF_PatchTST': TGTSF_PatchTST,
-            'TTSF': TTSF,
-            'random_TSF': simple_PatchTST,
             'TGTSF_torch': TGTSF_torch,
-            'TGTSF_torch_v1': TGTSF_torch_v1,
-            'TGTSF_dct': TGTSF_dct
         }
         model = model_dict[self.args.model].Model(self.args).float()
 
