@@ -4,6 +4,8 @@ The main model is TGTSF_torch. Other versions are deprecated.
 
 We will update the paper on arxiv from time to time. Keep updated here: https://arxiv.org/abs/2405.13522
 
+Check out our new time series forecasting pipeline: [Code](https://github.com/VEWOXIC/Universal-Cross-Modal-Time-Series-Forecasting-Pipeline). A DLinear-like framework that support multiple features such as multimodal dataset support, better model/dataset/task management, more readable data pipeline and torch-lightning capatability! TGTSF is included! 
+
 
 ## Dataset Preparation
 
